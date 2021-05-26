@@ -1,0 +1,30 @@
+Game:
+  WaitTime: 15
+  GameTime: 240
+  Snowballs: 16
+  Whitelist:
+  - /mute
+  - /list
+  SignGlass: false
+  PrivateChat: true
+  AutoJoinOnEnd: true
+  LobbyMaxDistance: 8
+  MaxSBNameLenght: 16
+  CommandsWin:
+  - money give %first% 0
+  - money give %second% 0
+  - money give %third% 0
+  - money give %other% 0
+  CommandsStart:
+  - kit give %player%
+BungeeMode:
+  Enabled: false
+  ServerOnGameEnd: Hub
+MySQL:
+  Enabled: false
+  QueueAmount: 20
+  Host: 127.0.0.1
+  Database: database
+  Username: Fr33styler
+  Password: '12345'
+  Port: 3306
