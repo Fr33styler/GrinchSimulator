@@ -35,16 +35,16 @@ public class CommandDelete implements Command {
 			int id = Integer.parseInt(args[1]);
 			Game g = main.getManager().getGame(id);
 			if (g == null) {
-				p.sendMessage(Messages.PREFIX + " §cNo game found with this ID.");
+				p.sendMessage(Messages.PREFIX + " Â§cNo game found with this ID.");
 			} else {
 				main.getManager().stopGame(g, false);
 				main.getManager().removeGame(g);
-				p.sendMessage(Messages.PREFIX + " §aGame was removed succesfuly.");
+				p.sendMessage(Messages.PREFIX + " Â§aGame was removed succesfuly.");
 				main.getGameDatabase().set("Game." + id, null);
 				main.getGameDatabase().save();
 			}
 		} catch (NumberFormatException e) {
-			p.sendMessage(Messages.PREFIX + " §cMust be a number!");
+			p.sendMessage(Messages.PREFIX + " Â§cMust be a number!");
 		}
 	}
 

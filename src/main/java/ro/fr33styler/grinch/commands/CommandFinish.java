@@ -47,7 +47,7 @@ public class CommandFinish implements Command {
 		main.getGameDatabase().set("Game." + setup.getID() + ".Gifts", GameUtils.getSerializedBlocks(setup.getGifts()));
 		main.getGameDatabase().save();
 		p.playSound(p.getLocation(), Sound.ENTITY_PLAYER_LEVELUP, 1F, 1F);
-		p.sendMessage(Messages.PREFIX + " §aThe game has been successfully set.");
+		p.sendMessage(Messages.PREFIX + " Â§aThe game has been successfully set.");
 		main.getSetups().remove(p);
 	}
 

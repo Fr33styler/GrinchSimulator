@@ -129,10 +129,10 @@ public class GameManager {
 		if (g.getState() == GameState.WAITING) {
 			status.updateLine(7, "");
 			status.updateLine(6, Messages.SCOREBOARD_LOBBY_ID.toString() + g.getID());
-			status.updateLine(5, Messages.SCOREBOARD_LOBBY_PLAYERS + " §a"+g.getPlayers().size());
+			status.updateLine(5, Messages.SCOREBOARD_LOBBY_PLAYERS + " Â§a"+g.getPlayers().size());
 			status.updateLine(4, "");
 			if (g.isStarted()) {
-			  status.updateLine(3, Messages.SCOREBOARD_LOBBY_GAME_START + " §c" + g.getTimer());
+			  status.updateLine(3, Messages.SCOREBOARD_LOBBY_GAME_START + " Â§c" + g.getTimer());
 			} else {
 			  status.updateLine(3, Messages.SCOREBOARD_LOBBY_WAITING.toString());
 			}

@@ -14,12 +14,6 @@ import org.bukkit.entity.Player;
 
 public class GameUtils {
 	
-	private static String version = Bukkit.getServer().getClass().getPackage().getName().replace(".", ",").split(",")[3];
-	
-	public static String getServerVersion() {
-		return version;
-	}
-	
     public static List<Location> getDeserializedLocations(List<String> list, int yFix) {
         List<Location> loclist = new ArrayList<Location>();
         for (String l : list) {

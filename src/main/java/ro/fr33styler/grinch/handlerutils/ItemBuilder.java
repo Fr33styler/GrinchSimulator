@@ -11,9 +11,9 @@ public class ItemBuilder {
 	public static ItemStack create(Material m, int number, String nume, String lore) {
 		ItemStack is = new ItemStack(m, number);
 		ItemMeta im = is.getItemMeta();
-		im.setDisplayName(nume.replace("&", "ง"));
+		im.setDisplayName(nume.replace("&", "ยง"));
 		if (lore != null) {
-		    im.setLore(Arrays.asList(lore.replace("&", "ง").split("#")));
+		    im.setLore(Arrays.asList(lore.replace("&", "ยง").split("#")));
 		}
 		is.setItemMeta(im);
 		    
@@ -23,7 +23,7 @@ public class ItemBuilder {
 	public static ItemStack create(Material m, int number, byte data, String nume) {
 		ItemStack is = new ItemStack(m, number, data);
 		ItemMeta im = is.getItemMeta();
-		im.setDisplayName(nume.replace("&", "ง"));
+		im.setDisplayName(nume.replace("&", "ยง"));
 		is.setItemMeta(im);
 		    
 	    return is;

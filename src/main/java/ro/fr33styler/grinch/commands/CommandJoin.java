@@ -33,7 +33,7 @@ public class CommandJoin implements Command {
 		try {
 			main.getManager().addPlayer(main.getManager().getGame(Integer.parseInt(args[1])), p);
 		} catch (NumberFormatException e) {
-			p.sendMessage(Messages.PREFIX + "§cMust be a number!");
+			p.sendMessage(Messages.PREFIX + "Â§cMust be a number!");
 		}
 	}
 

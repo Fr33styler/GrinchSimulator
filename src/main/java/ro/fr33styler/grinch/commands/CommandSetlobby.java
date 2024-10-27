@@ -40,8 +40,8 @@ public class CommandSetlobby implements Command {
 			p.sendMessage("");
 		}
 		p.playSound(p.getLocation(), Sound.ENTITY_PLAYER_LEVELUP, 1F, 1F);
-		p.sendMessage(Messages.PREFIX + " §7The lobby was succesfully set. Now right click using a");
-		p.sendMessage(Messages.PREFIX + " §cDIAMON SWORD §7to add gifts. When you've done type /gs finish!");
+		p.sendMessage(Messages.PREFIX + " Â§7The lobby was succesfully set. Now right click using a");
+		p.sendMessage(Messages.PREFIX + " Â§cDIAMON SWORD Â§7to add gifts. When you've done type /gs finish!");
 	}
 
 }

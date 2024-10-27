@@ -19,9 +19,9 @@ public class Configuration {
 		file = new File(main.getDataFolder(), name);
 		ConsoleCommandSender console = main.getServer().getConsoleSender();
 		if (file.exists()) {
-			console.sendMessage("§a - Loading "+name+"...");
+			console.sendMessage("Â§a - Loading "+name+"...");
 		} else {
-			console.sendMessage("§a - Creating a new "+name);
+			console.sendMessage("Â§a - Creating a new "+name);
 			if (newFile) {
 			   try {
 				  file.createNewFile();

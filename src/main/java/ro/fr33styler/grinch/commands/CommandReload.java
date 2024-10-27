@@ -32,7 +32,7 @@ public class CommandReload implements Command {
 	public void executeCommand(Player p, String[] args) {
         main.getServer().getPluginManager().disablePlugin(main);
         main.getServer().getPluginManager().enablePlugin(main);
-        p.sendMessage(Messages.PREFIX + " §aGrinch Simulator has been succesfuly reloaded!");
+        p.sendMessage(Messages.PREFIX + " Â§aGrinch Simulator has been succesfuly reloaded!");
 	}
 
 }

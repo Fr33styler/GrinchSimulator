@@ -2,34 +2,34 @@
 <project version="4">
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/main/java/ro/f33styler/grinch/Commands.java" charset="windows-1252" />
-    <file url="file://$PROJECT_DIR$/src/main/java/ro/f33styler/grinch/Commands.java" charset="windows-1252" />
-    <file url="file://$PROJECT_DIR$/src/main/java/ro/f33styler/grinch/CommandsHandler/CommandCreate.java" charset="windows-1252" />
-    <file url="file://$PROJECT_DIR$/src/main/java/ro/f33styler/grinch/CommandsHandler/CommandCreate.java" charset="windows-1252" />
-    <file url="file://$PROJECT_DIR$/src/main/java/ro/f33styler/grinch/CommandsHandler/CommandDelete.java" charset="windows-1252" />
-    <file url="file://$PROJECT_DIR$/src/main/java/ro/f33styler/grinch/CommandsHandler/CommandDelete.java" charset="windows-1252" />
-    <file url="file://$PROJECT_DIR$/src/main/java/ro/f33styler/grinch/CommandsHandler/CommandFinish.java" charset="windows-1252" />
-    <file url="file://$PROJECT_DIR$/src/main/java/ro/f33styler/grinch/CommandsHandler/CommandFinish.java" charset="windows-1252" />
-    <file url="file://$PROJECT_DIR$/src/main/java/ro/f33styler/grinch/CommandsHandler/CommandHelp.java" charset="windows-1252" />
-    <file url="file://$PROJECT_DIR$/src/main/java/ro/f33styler/grinch/CommandsHandler/CommandHelp.java" charset="windows-1252" />
-    <file url="file://$PROJECT_DIR$/src/main/java/ro/f33styler/grinch/CommandsHandler/CommandJoin.java" charset="windows-1252" />
-    <file url="file://$PROJECT_DIR$/src/main/java/ro/f33styler/grinch/CommandsHandler/CommandJoin.java" charset="windows-1252" />
-    <file url="file://$PROJECT_DIR$/src/main/java/ro/f33styler/grinch/CommandsHandler/CommandReload.java" charset="windows-1252" />
-    <file url="file://$PROJECT_DIR$/src/main/java/ro/f33styler/grinch/CommandsHandler/CommandReload.java" charset="windows-1252" />
-    <file url="file://$PROJECT_DIR$/src/main/java/ro/f33styler/grinch/CommandsHandler/CommandSetlobby.java" charset="windows-1252" />
-    <file url="file://$PROJECT_DIR$/src/main/java/ro/f33styler/grinch/CommandsHandler/CommandSetlobby.java" charset="windows-1252" />
-    <file url="file://$PROJECT_DIR$/src/main/java/ro/f33styler/grinch/Configuration/Configuration.java" charset="windows-1252" />
-    <file url="file://$PROJECT_DIR$/src/main/java/ro/f33styler/grinch/Configuration/Configuration.java" charset="windows-1252" />
-    <file url="file://$PROJECT_DIR$/src/main/java/ro/f33styler/grinch/Handler/GameListener.java" charset="windows-1252" />
-    <file url="file://$PROJECT_DIR$/src/main/java/ro/f33styler/grinch/Handler/GameListener.java" charset="windows-1252" />
-    <file url="file://$PROJECT_DIR$/src/main/java/ro/f33styler/grinch/Handler/GameManager.java" charset="windows-1252" />
-    <file url="file://$PROJECT_DIR$/src/main/java/ro/f33styler/grinch/Handler/GameManager.java" charset="windows-1252" />
-    <file url="file://$PROJECT_DIR$/src/main/java/ro/f33styler/grinch/HandlerUtils/ItemBuilder.java" charset="windows-1252" />
-    <file url="file://$PROJECT_DIR$/src/main/java/ro/f33styler/grinch/HandlerUtils/ItemBuilder.java" charset="windows-1252" />
-    <file url="file://$PROJECT_DIR$/src/main/java/ro/f33styler/grinch/Main.java" charset="windows-1252" />
-    <file url="file://$PROJECT_DIR$/src/main/java/ro/f33styler/grinch/Main.java" charset="windows-1252" />
-    <file url="file://$PROJECT_DIR$/src/main/java/ro/f33styler/grinch/Scoreboard/ScoreboardLine.java" charset="windows-1252" />
-    <file url="file://$PROJECT_DIR$/src/main/java/ro/f33styler/grinch/Scoreboard/ScoreboardLine.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/main/java/ro/f33styler/grinch/Commands.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/ro/f33styler/grinch/CommandsHandler/CommandCreate.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/ro/f33styler/grinch/CommandsHandler/CommandDelete.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/ro/f33styler/grinch/CommandsHandler/CommandFinish.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/ro/f33styler/grinch/CommandsHandler/CommandHelp.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/ro/f33styler/grinch/CommandsHandler/CommandJoin.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/ro/f33styler/grinch/CommandsHandler/CommandReload.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/ro/f33styler/grinch/CommandsHandler/CommandSetlobby.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/ro/f33styler/grinch/Configuration/Configuration.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/ro/f33styler/grinch/Handler/GameListener.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/ro/f33styler/grinch/Handler/GameManager.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/ro/f33styler/grinch/HandlerUtils/ItemBuilder.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/ro/f33styler/grinch/Main.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/ro/f33styler/grinch/Scoreboard/ScoreboardLine.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/ro/fr33styler/grinch/Commands.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/ro/fr33styler/grinch/Main.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/ro/fr33styler/grinch/commands/CommandCreate.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/ro/fr33styler/grinch/commands/CommandDelete.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/ro/fr33styler/grinch/commands/CommandFinish.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/ro/fr33styler/grinch/commands/CommandHelp.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/ro/fr33styler/grinch/commands/CommandJoin.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/ro/fr33styler/grinch/commands/CommandReload.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/ro/fr33styler/grinch/commands/CommandSetlobby.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/ro/fr33styler/grinch/configuration/Configuration.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/ro/fr33styler/grinch/handler/GameListener.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/ro/fr33styler/grinch/handler/GameManager.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/ro/fr33styler/grinch/handlerutils/ItemBuilder.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/ro/fr33styler/grinch/scoreboard/ScoreboardLine.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
   </component>
 </project>

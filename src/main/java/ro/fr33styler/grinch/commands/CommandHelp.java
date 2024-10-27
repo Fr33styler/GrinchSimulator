@@ -23,13 +23,13 @@ public class CommandHelp implements Command {
 	
 	@Override
 	public void executeCommand(Player p, String[] args) {
-		p.sendMessage(Messages.PREFIX + " §7- §dHelp");
-		p.sendMessage("- §7/§cgs join §8<§aid§8>");
-		p.sendMessage("- §7/§cgs leave");
+		p.sendMessage(Messages.PREFIX + " Â§7- Â§dHelp");
+		p.sendMessage("- Â§7/Â§cgs join Â§8<Â§aidÂ§8>");
+		p.sendMessage("- Â§7/Â§cgs leave");
 		if (p.hasPermission("tl.admin")) {
-			p.sendMessage("- §7/§cgs reload");
-			p.sendMessage("- §7/§cgs delete §8<§aid§8>");
-			p.sendMessage("- §7/§cgs create §8<§aid§8> §8<§amin_players§8> §8<§amax_players§8>");
+			p.sendMessage("- Â§7/Â§cgs reload");
+			p.sendMessage("- Â§7/Â§cgs delete Â§8<Â§aidÂ§8>");
+			p.sendMessage("- Â§7/Â§cgs create Â§8<Â§aidÂ§8> Â§8<Â§amin_playersÂ§8> Â§8<Â§amax_playersÂ§8>");
 		}
 	}
 	

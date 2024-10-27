@@ -61,9 +61,9 @@ public class GameListener implements Listener {
 		    	if (e.getClickedBlock() != null && e.getClickedBlock().getType() == Material.PLAYER_HEAD) {
 		    		if (!setup.getGifts().contains(e.getClickedBlock())) {
 		    		    setup.getGifts().add(e.getClickedBlock());
-		    		    p.sendMessage(Messages.PREFIX + "§7 Gift was set. (§d"+setup.getGifts().size()+"§7)");
+		    		    p.sendMessage(Messages.PREFIX + "Â§7 Gift was set. (Â§d"+setup.getGifts().size()+"Â§7)");
 		    		} else {
-		    			p.sendMessage(Messages.PREFIX + "§c This gift has been already selected.");
+		    			p.sendMessage(Messages.PREFIX + "Â§c This gift has been already selected.");
 		    		}
 		    	}
 		    }
@@ -119,7 +119,7 @@ public class GameListener implements Listener {
 			}
 		} else {
 			e.setCancelled(true);
-			g.broadcast("§7" + p.getName() + "§f: " + e.getMessage());
+			g.broadcast("Â§7" + p.getName() + "Â§f: " + e.getMessage());
 		}
 	}
 	
@@ -244,7 +244,7 @@ public class GameListener implements Listener {
 				while (it.hasNext()) {
 					Location sign = it.next();
 					if (s.getWorld() == sign.getWorld() && s.distance(sign) == 0) {
-						p.sendMessage(Messages.PREFIX + " §cSign removed succefully!");
+						p.sendMessage(Messages.PREFIX + " Â§cSign removed succefully!");
 						String key = g.getID() + "," + s.getWorld().getName() + "," + s.getBlockX() + "," + s.getBlockY() + "," + s.getBlockZ();
 						List<String> keys = main.getGameDatabase().getStringList("Signs");
 						keys.remove(key);
@@ -364,13 +364,13 @@ public class GameListener implements Listener {
 					keys.add(line+","+l.getWorld().getName()+","+l.getBlockX()+","+l.getBlockY()+","+l.getBlockZ());
 					main.getGameDatabase().set("Signs", keys);
 					main.getGameDatabase().save();
-				    p.sendMessage(Messages.PREFIX + " §aSign created succefully!");
+				    p.sendMessage(Messages.PREFIX + " Â§aSign created succefully!");
 				} else {
 					e.setCancelled(true);
-					p.sendMessage(Messages.PREFIX + " §cThe game dosen't exist!");
+					p.sendMessage(Messages.PREFIX + " Â§cThe game dosen't exist!");
 				}
 			} catch (Exception ex) {
-				p.sendMessage(Messages.PREFIX + " §cInvalid game ID!");
+				p.sendMessage(Messages.PREFIX + " Â§cInvalid game ID!");
 				return;
 			}
 		}

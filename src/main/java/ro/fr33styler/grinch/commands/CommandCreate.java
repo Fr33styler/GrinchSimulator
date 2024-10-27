@@ -37,12 +37,12 @@ public class CommandCreate implements Command {
 			int min = Integer.parseInt(args[2]);
 			int max = Integer.parseInt(args[3]);
 			if (min < 2) {
-				p.sendMessage(Messages.PREFIX + " §cThe minimum should be bigger than 1");
+				p.sendMessage(Messages.PREFIX + " Â§cThe minimum should be bigger than 1");
 				return;
 			}
 			for (GameSetup setup : main.getSetups().values()) {
 				if (setup.getID() == id) {
-					p.sendMessage(Messages.PREFIX + " §cA setup with same ID is already being made.");
+					p.sendMessage(Messages.PREFIX + " Â§cA setup with same ID is already being made.");
 					return;
 				}
 			}
@@ -53,16 +53,16 @@ public class CommandCreate implements Command {
 					for (int i = 0; i < 20; i++) {
 						p.sendMessage("");
 					}
-					p.sendMessage(Messages.PREFIX + " §7Welcome to Grinch Simulator wizard setup. Please follow the commands!");
-					p.sendMessage(Messages.PREFIX + " §7Use §c/gs setlobby§7 to set where players spawn.");
+					p.sendMessage(Messages.PREFIX + " Â§7Welcome to Grinch Simulator wizard setup. Please follow the commands!");
+					p.sendMessage(Messages.PREFIX + " Â§7Use Â§c/gs setlobbyÂ§7 to set where players spawn.");
 				} else {
-					p.sendMessage(Messages.PREFIX + " §cYou must finish your previous setup first.");
+					p.sendMessage(Messages.PREFIX + " Â§cYou must finish your previous setup first.");
 				}
 			} else {
-				p.sendMessage(Messages.PREFIX + " §cA game with same ID already exists.");
+				p.sendMessage(Messages.PREFIX + " Â§cA game with same ID already exists.");
 			}
 		} catch (NumberFormatException e) {
-			p.sendMessage(Messages.PREFIX + " §cMust be a number!");
+			p.sendMessage(Messages.PREFIX + " Â§cMust be a number!");
 		}
 	}
 

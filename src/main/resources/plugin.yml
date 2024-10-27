@@ -1,7 +1,7 @@
 name: GrinchSimulator
-version: 1.12
+version: 1.13
 api-version: 1.13
-main: ro.Fr33styler.GrinchSimulator.Main
+main: ro.fr33styler.grinch.Main
 author: Fr33styler
 softdepend: [Multiverse-Core, MultiWorld]
 commands:
