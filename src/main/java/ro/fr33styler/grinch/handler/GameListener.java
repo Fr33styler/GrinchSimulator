@@ -90,6 +90,9 @@ public class GameListener implements Listener {
 					    Location gift = e.getClickedBlock().getLocation();
 					    p.spawnParticle(Particle.HEART, gift, 5, 0.2f, 0.2f, 0.2f);
 					    p.spawnParticle(Particle.NOTE, gift, 5, 0.2f, 0.2f, 0.2f);
+						if (g.getAllGiftsStolen() >= g.getGifts().size() && g.getState() == GameState.IN_GAME) {
+							g.setGameTimer(0);
+						}
 					}
 				}
 			}
