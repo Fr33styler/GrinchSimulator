@@ -1,9 +1,9 @@
 name: GrinchSimulator
-version: 1.13
+version: 1.14a
 api-version: 1.13
 main: ro.fr33styler.grinch.Main
 author: Fr33styler
-softdepend: [Multiverse-Core, MultiWorld]
+softdepend: [Multiverse-Core, MultiWorld, PlaceholderAPI]
 commands:
   grinch:
     description: This is the main plugin command.

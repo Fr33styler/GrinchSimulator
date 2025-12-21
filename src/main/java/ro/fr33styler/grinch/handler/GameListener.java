@@ -43,6 +43,7 @@ import org.bukkit.potion.PotionEffectType;
 import ro.fr33styler.grinch.Main;
 import ro.fr33styler.grinch.Messages;
 import ro.fr33styler.grinch.api.GameLeaveEvent;
+import ro.fr33styler.grinch.cache.PlayerStats;
 import ro.fr33styler.grinch.handlerutils.GameUtils;
 
 public class GameListener implements Listener {
@@ -166,11 +167,13 @@ public class GameListener implements Listener {
 	
 	@EventHandler
 	public void onJoin(PlayerJoinEvent e) {
+        Player player = e.getPlayer();
 		if (main.getManager().isBungeeMode()) {
 			e.setJoinMessage(null);
 			Game g = main.getManager().getGames().get(0);
-			main.getManager().addPlayer(g, e.getPlayer());
+			main.getManager().addPlayer(g, player);
 		}
+        main.getStatistics().put(player.getUniqueId(), new PlayerStats(player));
 	}
 	
 	@EventHandler
@@ -300,6 +303,7 @@ public class GameListener implements Listener {
 		if (setup != null) {
 			main.getSetups().remove(p);
 		}
+        main.getStatistics().remove(p.getUniqueId());
 		if (main.getManager().isBungeeMode()) {
 			e.setQuitMessage(null);
 		}

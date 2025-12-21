@@ -25,7 +25,7 @@ public class CommandJoin implements Command {
 	
 	@Override
 	public boolean hasPermission(Player p) {
-		return true;
+		return p.hasPermission("grinch.join");
 	}
 	
 	@Override

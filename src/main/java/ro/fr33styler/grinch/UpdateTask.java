@@ -5,6 +5,7 @@ import org.bukkit.scheduler.BukkitRunnable;
 
 import net.md_5.bungee.api.ChatMessageType;
 import net.md_5.bungee.api.chat.TextComponent;
+import ro.fr33styler.grinch.cache.PlayerStats;
 import ro.fr33styler.grinch.handler.Game;
 import ro.fr33styler.grinch.handler.GameState;
 import ro.fr33styler.grinch.handlerutils.MathUtils;
@@ -13,6 +14,8 @@ import ro.fr33styler.grinch.song.Layer;
 import ro.fr33styler.grinch.song.Note;
 import ro.fr33styler.grinch.song.NotePitch;
 import ro.fr33styler.grinch.song.Song;
+
+import java.util.Map;
 
 public class UpdateTask extends BukkitRunnable {
 
@@ -70,6 +73,11 @@ public class UpdateTask extends BukkitRunnable {
 				e.printStackTrace();
 			}
 		}
+        if (ticks % 200 == 0 && main.getMySQL() != null) {
+            for (PlayerStats stats : main.getStatistics().values()) {
+                main.getMySQL().synchronise(stats.getPlayer().getUniqueId(), stats);
+            }
+        }
 		ticks++;
 	}
 

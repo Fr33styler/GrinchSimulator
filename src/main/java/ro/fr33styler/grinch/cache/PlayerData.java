@@ -6,6 +6,7 @@ import org.bukkit.Location;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.potion.PotionEffect;
+import org.bukkit.scoreboard.Scoreboard;
 
 public class PlayerData {
 
@@ -24,6 +25,7 @@ public class PlayerData {
 	private final float fallDistance;
 	private final ItemStack[] armour;
 	private final ItemStack[] inventory;
+    private final Scoreboard scoreboard;
 	private final Collection<PotionEffect> effects;
 
 	public PlayerData(Player p) {
@@ -39,6 +41,7 @@ public class PlayerData {
 		fireticks = p.getFireTicks();
 		walkspeed = p.getWalkSpeed();
 		maxhealth = p.getMaxHealth();
+        scoreboard = p.getScoreboard();
 		fallDistance = p.getFallDistance();
 		effects = p.getActivePotionEffects();
 		inventory = p.getInventory().getContents();
@@ -94,6 +97,7 @@ public class PlayerData {
 		p.setFallDistance(fallDistance);
 		p.getInventory().setArmorContents(armour);
 		p.getInventory().setContents(inventory);
+        p.setScoreboard(scoreboard);
 		for (PotionEffect effect : p.getActivePotionEffects()) {
 			p.removePotionEffect(effect.getType());
 		}

@@ -1,9 +1,7 @@
 package ro.fr33styler.grinch;
 
 import java.io.File;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
+import java.util.*;
 
 import org.bukkit.Bukkit;
 import org.bukkit.Location;
@@ -14,6 +12,7 @@ import org.bukkit.entity.Player;
 import org.bukkit.event.HandlerList;
 import org.bukkit.plugin.java.JavaPlugin;
 
+import ro.fr33styler.grinch.cache.PlayerStats;
 import ro.fr33styler.grinch.configuration.Configuration;
 import ro.fr33styler.grinch.handler.Game;
 import ro.fr33styler.grinch.handler.GameListener;
@@ -21,6 +20,7 @@ import ro.fr33styler.grinch.handler.GameManager;
 import ro.fr33styler.grinch.handler.GameSetup;
 import ro.fr33styler.grinch.handlerutils.GameUtils;
 import ro.fr33styler.grinch.mysql.MySQL;
+import ro.fr33styler.grinch.papi.PlaceholderAPIHook;
 import ro.fr33styler.grinch.song.NBSDecoder;
 import ro.fr33styler.grinch.song.Song;
 
@@ -35,6 +35,8 @@ public class Main extends JavaPlugin {
 	private List<String> cmdsStart;
 	private HashMap<Player, GameSetup> setup;
 	private List<Song> songs = new ArrayList<Song>();
+    private PlaceholderAPIHook hook;
+    private final Map<UUID, PlayerStats> statistics = new IdentityHashMap<>();
 	
 	@Override
 	public void onEnable() {
@@ -116,6 +118,13 @@ public class Main extends JavaPlugin {
 	    	 songs.add(NBSDecoder.parse(file));
 	      }
 	    }
+        if (getServer().getPluginManager().getPlugin("PlaceholderAPI") != null) {
+            hook = new PlaceholderAPIHook(this);
+            hook.register();
+        }
+        for (Player player : Bukkit.getOnlinePlayers()) {
+            statistics.put(player.getUniqueId(), new PlayerStats(player));
+        }
 		getServer().getPluginManager().registerEvents(new GameListener(this), this);
 		getCommand("grinch").setExecutor(new Commands(this));
 		boolean enabled = config.getBoolean("MySQL.Enabled");
@@ -138,12 +147,20 @@ public class Main extends JavaPlugin {
 		}
 		setup.clear();
 		manager = null;
+        if (hook != null) {
+            hook.unregister();
+        }
 		HandlerList.unregisterAll(this);
+        statistics.clear();
 		update.cancel();
 		update = null;
 	}
 
-	public List<Song> getSongs() {
+    public Map<UUID, PlayerStats> getStatistics() {
+        return statistics;
+    }
+
+    public List<Song> getSongs() {
 		return songs;
 	}
 	
