@@ -4,7 +4,7 @@ import java.util.Random;
 
 public class MathUtils {
 	
-	private static final Random random = new Random(System.nanoTime());
+	private static final Random random = new Random();
 
 	public static Random random() {
 		return random;
